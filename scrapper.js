@@ -16,7 +16,15 @@ let res = await axios.get('https://www.indiapost.gov.in/_layouts/15/DOP.Portal.T
        headers:headers,
        data:form
    })
-   return result.data;
+   $ = cheerio.load(result.data);
+   let head1 = $('#ctl00_PlaceHolderMain_ucNewLegacyControl_divTrckMailArticleDtlsOER').html();
+   if(head1==undefined){
+       return "error"
+   }
+   let head2 = "<table id=\"t\">"
+   head2 +=$('#ctl00_PlaceHolderMain_ucNewLegacyControl_gvTrckMailArticleEvntOER').html();
+   head2+='</table>'
+   return head1+'<br>'+head2
 }
 module.exports = scrap;
 
