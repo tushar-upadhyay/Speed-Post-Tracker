@@ -2,7 +2,7 @@
   "name": "indiaposttracker",
   "version": "1.0.0",
   "description": "This application fetches current status of your india post consignment without solving any captcha",
-  "main": "index.js",
+  "main": "server.js",
   "author": "Tushar Upadhyay",
   "license": "MIT",
   "dependencies": {
