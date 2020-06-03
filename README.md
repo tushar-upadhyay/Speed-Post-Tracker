@@ -1,7 +1,7 @@
 # Speed-Post-Tracker
 This is a simple web scrapper that scraps Indian Speed Post <b>without Captcha!</b>
 ## Demo
-You can view demo website <a href="https://speedposttracker.herokuapp.com" >Here</a>
+You can view demo website <a href="https://speedposttrack.herokuapp.com" >Here</a>
 ### Installation 
 Just Clone the repo and run 
 ```bash 
