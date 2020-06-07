@@ -8,7 +8,6 @@ let dict = {
 }
 function solve(captcha, context) {
   if (context == "Evaluate the Expression") {
-    console.log(captcha);
     captcha = String(captcha).split(' ');
     let a = parseInt(captcha[0]);
     let b = parseInt(captcha[2]);
@@ -19,7 +18,6 @@ function solve(captcha, context) {
     } else {
       result = a + b;
     }
-    console.log(result);
     return result;
   }
   else if(context=="Enter characters as displayed in image"){
@@ -27,6 +25,7 @@ function solve(captcha, context) {
   }
   else{
       captcha = String(captcha).split(',');
+      context = context.split(' ');
       let position = context[2];
       let intPostition = dict[position];
       return captcha[intPostition];
