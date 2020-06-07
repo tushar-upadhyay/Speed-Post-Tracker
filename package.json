@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This application fetches current status of your india post consignment without solving any captcha",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "author": "Tushar Upadhyay",
   "license": "MIT",
   "dependencies": {
