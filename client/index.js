@@ -18,6 +18,7 @@ function handleSubmit(e){
         }
     })
     .catch(err=>{
+        document.getElementById('result').className = "";
         document.getElementById('result').innerHTML = '<br><h3>Your ID is incorrect or some server issue</h3>';
         document.getElementById('btn').removeAttribute('disabled')
     });
