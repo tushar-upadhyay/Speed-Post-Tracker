@@ -44,7 +44,7 @@ html,body{
     margin: 10px;
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
-#t{
+.table{
     width: 100%;
     border-collapse:collapse;
     border:1px,
