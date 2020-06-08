@@ -3,7 +3,7 @@ var temp = `
 		<tbody><tr align="center">
 			<th scope="col">Booked At</th><th scope="col">Booked On</th><th scope="col">Destination Pincode</th><th scope="col">Tariff</th><th scope="col">Article Type</th><th scope="col">Delivery Location</th><th scope="col">Delivery Status</th>
 		</tr><tr>
-			<td>Ujjain G.P.O.</td><td>6/8/2020 </td><td>465441</td><td>94.40</td><td>Inland Speed Post</td><td>Burhanpur</td><td>Packed</td>
+			<td>Ujjain G.P.O.</td><td>6/8/2020 </td><td>450331</td><td>94.40</td><td>Inland Speed Post</td><td>Burhanpur</td><td>Packed</td>
 		</tr>
 	</tbody></table>
 <br>
