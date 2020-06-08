@@ -16,14 +16,17 @@ async function scrap(id){
         data:form
         })
         $ = cheerio.load(result.data);
-        let head1 = $('#ctl00_PlaceHolderMain_ucNewLegacyControl_divTrckMailArticleDtlsOER').html();
-        if(head1==undefined){
+        let tables = [];
+        $('table').map((i,el)=>{
+            $(el).addClass('table')
+            
+            tables.push($(el).parent().html());
+        });
+
+        if(tables.length==0){
             return "error"
         }
-        let head2 = "<table id=\"t\">"
-        head2 +=$('#ctl00_PlaceHolderMain_ucNewLegacyControl_gvTrckMailArticleEvntOER').html();
-        head2+='</table>'
-        return head1+'<br>'+head2
+        return tables[0]+'<br>'+tables[1]
     }
     catch(err){
         return "error";
