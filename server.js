@@ -7,7 +7,7 @@ app.get(`/search`,async(req,res)=>{
     if(id=='EN01031169IN'){
         return res.send(temp[0])
     }
-    if(id=='EN6316991IN'){
+    if(id=='EN06316991IN'){
         return res.send(temp[1])
     }
     response = await scarp(id);
