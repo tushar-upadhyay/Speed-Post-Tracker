@@ -29,7 +29,7 @@ var temp1 = `
 			<td>12/06/2020</td><td>10:3:20</td><td>Burhanpur SO</td><td>Out for delivery </td>
 		</tr>
 		<tr>
-			<td>12/06/2020</td><td>13:7:40</td><td>Burhanpur SO</td><tdItem Delivered </td>
+			<td>12/06/2020</td><td>13:7:40</td><td>Burhanpur SO</td><td>consignee not answered the call </td>
 		</tr>
 	</tbody></table>
 `
